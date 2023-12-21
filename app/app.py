@@ -120,4 +120,4 @@ if __name__ == "__main__":
 	fh = FrameHandler()
 	bp = BoundingBoxPredictor(fh)
 	os.system("rm {}/*".format(os.path.join(DIR_PATH, "static/images")))
-	app.run()
+	app.run(host="0.0.0.0", port=5000)
